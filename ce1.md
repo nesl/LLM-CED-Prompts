@@ -1,5 +1,5 @@
 # Prompts for Detecting Complex Event 1 
-~~~
+```
 Imagine you are given a sequence of activities as live streaming. At each window, you get the current activity label, and your goal is to output a timely detection of whether, at the current time, a specific type of event happens. Each activity label is sampled every 5 seconds, so you can think of each label as the activity that happens during this 5-second time window. To help you better understand the problem, I give you an example input below, which is a live-streaming list of activities:
 ['walk', 'sit', 'sit', 'sit', 'sit', 'sit', 'sit', 'sit', 'sit', 'flush_toilet', 'flush_toilet', 'wash', 'wash', 'wash', 'wash', 'wash', 'wash', 'walk', 'walk', 'walk', 'walk', 'walk', 'walk', 'walk']
 
@@ -11,8 +11,8 @@ Please mimic a real-time detector that can output the corresponding event label 
 
 Now consider this example:
 
-Input: ['sit', 'sit', 'sit', 'sit', 'sit', 'sit', 'sit', 'sit', 'sit', 'sit', 'walk', 'walk', 'walk', 'walk', 'walk', 'walk', 'walk', 'walk', 'brush_teeth', 'brush_teeth', 'brush_teeth', 'brush_teeth', 'brush_teeth', 'brush_teeth', 'wash', 'wash', 'wash', 'wash', 'wash', 'wash', 'wash', 'wash', 'walk', 'walk', 'walk', 'walk', 'walk', 'walk', 'walk', 'walk', 'walk', 'walk', 'walk', 'walk', 'walk', 'walk', 'walk', 'walk', 'walk', 'walk', 'walk', 'walk', 'walk', 'walk', 'walk', 'walk', 'walk', 'walk', 'walk', 'walk']
+Input: $AE_SEQUENCE$
 
 # Think step by step, and do not write codes. Your answer should follow this format:
 Output: []
-~~~
+```
