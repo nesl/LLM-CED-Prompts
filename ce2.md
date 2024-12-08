@@ -41,9 +41,9 @@ To help you better understand the problem, I give you an example input below, wh
 
 And here are all the useful activities that you will encounter: ['rush_teeth', 'click_mouse', 'drink', 'eat', 'flush_toilet', 'sit', 'type', 'walk', 'wash']
 
-Now, we are interested in the complex event “workspace sanitary protocol violation”, which is defined as:
-“A person starts working without washing hands for at least 20 seconds after they use the restroom. The hand washing should at least last for 20 seconds consecutively. Each time when a violation happens, trigger an alert immediately at that window and then reset the system.”
-The event label for this complex event is 1.
+Now, we are interested in the complex event “sanitary eating habit violation”, which is defined as:
+“No wash hands at most 2 minutes before having a meal (including eat and drink). The hand washing should at least last for 20 seconds consecutively, and if they touch other things (including brush, click, flush and type) after washing hands and before having meals, they need to wash hands again. For each violation, we only trigger alert at the beginning of each meal session to avoid redundancy. Eat, drink, and sit will not interrupt each meal session, while other activities will.”
+The event label for this complex event is 2.
 
 Please mimic a real-time detector that can output the corresponding event label when you discover the event takes place; otherwise, 0.
 That said, your output sequence should be the same length as the input activity sequence.
